@@ -28,8 +28,15 @@ API 只包含接口定义，不包含任何实现逻辑。具体实现由 `MCZJU
 示例：
 
 ```xml
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+
 <dependency>
-  <groupId>io.mczju</groupId>
+  <groupId>com.github.tozero0</groupId>
   <artifactId>itemcreator-api</artifactId>
   <version>1.0</version>
   <scope>provided</scope>
