@@ -4,7 +4,7 @@
 
 本 API 是 `MCZJUItemCreator` 插件对外提供的公共 API，主要功能是由使用方插件通过**物品 ID** 获取由 `MCZJUItemCreator` 配置并管理的自定义物品。
 
-API 当前版本为 `1.0`。
+API 当前版本为 `1.0.0`。
 
 API 只包含接口定义，不包含任何实现逻辑。具体实现由 `MCZJUItemCreator` 插件在运行时通过 Bukkit 的 `ServicesManager` 提供。
 
@@ -14,6 +14,7 @@ API 只包含接口定义，不包含任何实现逻辑。具体实现由 `MCZJU
 
 - 给定一个物品 ID（字符串），向 `MCZJUItemCreator` 请求一个新的 `ItemStack` 实例。
 - 检查是否有该 ID 的物品被配置。
+> ID 带有命名空间 `minecraft` 时，无须配置即可请求原版物品，例如 `minecraft:diamond` 代表钻石。
 - 获取所有物品 ID （用于命令补全等场景）。
 
 ---
